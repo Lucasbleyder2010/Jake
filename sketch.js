@@ -4,7 +4,7 @@ var i;
 
 function preload(){
   pathImg = loadImage ("path.png")
-  jake = loadAnimation("jake1.png","jake2.png","jake3.png","jake4PNG")
+  boyImg = loadAnimation("jake1.png","jake2.png","jake3.png","jake4.PNG")
 
  
 }
@@ -13,8 +13,8 @@ function setup(){
   
   createCanvas(400,400);
  //crie um sprite para a pista 
-pathImg=createSprite("400,400,400,400")
-pathImg = addImage(path.png)
+path=createSprite("400,400,400,400")
+path.addImage(pathImg)
 //Faça com que a pista seja um fundo que se move dando a ela velocity Y.
 path.velocityY = -15
 path.scale=1.2;
@@ -22,7 +22,7 @@ path.scale=1.2;
 //crie um sprite de menino
 jake = createSprite("300,300,60,30")
 //adicione uma animação de corrida para ele
-jake = addAnimation("jake1.png","jake2.png","jake3.png","jake4.PNG")
+jake.addAnimation("jake",boyImg)
 boy.scale=0.08;
   
 //crie um limite à esquerda
